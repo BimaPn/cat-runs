@@ -13,9 +13,9 @@ const SPEED_BG1 = 0.006;
 const SPEED_BG2 = 0.02;
 const SPEED_BG3 = 0.03;
 
-export const STAGE_2 = 50;
-export const STAGE_3 = 120;
-export const STAGE_4 = 200;
+export const STAGE_2 = 250;
+export const STAGE_3 = 750;
+export const STAGE_4 = 1250;
 let currentStage = "background1";
 // const backGroundElement0 = document.querySelector("[data-background0]")
 const backGroundElement1 = document.querySelectorAll("[data-background1]");

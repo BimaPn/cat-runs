@@ -27,6 +27,8 @@ export const setupCat = () => {
   setCustomProperty(catElement,"--bottom",GROUND_BOTTOM);
   document.removeEventListener("keydown",onJumpKey);
   document.addEventListener("keydown",onJumpKey);
+  document.removeEventListener("touchstart",onJump);
+  document.addEventListener("touchstart",onJump);
 }
 export const updateCat = (delta,speedScale) => {
   handleRun(delta,speedScale);

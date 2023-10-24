@@ -16,7 +16,7 @@ const startScreenElement = document.querySelector("[data-start-screen]");
 setPixelToWorldScale()
 window.addEventListener("resize",setPixelToWorldScale);
 document.addEventListener("keydown",handleStart,{once : true});
-
+document.addEventListener("touchstart",handleStart,{once : true});
 firstLevelSound.loop = true;
 let lastTime;
 let speedScale;
@@ -78,6 +78,7 @@ function handleLose() {
   stopAllLevelSound();
   setTimeout(() => {
     document.addEventListener("keydown",handleStart,{once:true});
+    document.addEventListener("touchstart",handleStart,{once:true});
     startScreenElement.classList.remove("hide");
     showResultToScreen(score);
   },100);
